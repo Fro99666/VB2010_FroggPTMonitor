@@ -29,10 +29,10 @@ Partial Class FroggPerformance
         Me.RefreshTick = New System.Windows.Forms.Timer(Me.components)
         Me.DISK = New System.Diagnostics.PerformanceCounter()
         Me.PanelPerf = New System.Windows.Forms.Panel()
+        Me.txtDetail = New System.Windows.Forms.PictureBox()
         Me.txtDiskUsage = New System.Windows.Forms.Label()
         Me.timeList = New System.Windows.Forms.ComboBox()
         Me.ListType = New System.Windows.Forms.ComboBox()
-        Me.txtDetail = New System.Windows.Forms.PictureBox()
         Me.txtClose = New System.Windows.Forms.PictureBox()
         Me.btnAdv = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.PictureBox()
@@ -95,6 +95,18 @@ Partial Class FroggPerformance
         Me.PanelPerf.Size = New System.Drawing.Size(554, 123)
         Me.PanelPerf.TabIndex = 6
         '
+        'txtDetail
+        '
+        Me.txtDetail.BackColor = System.Drawing.Color.Transparent
+        Me.txtDetail.Image = Global.FroggMonitor.My.Resources.Resources.txtDetail
+        Me.txtDetail.Location = New System.Drawing.Point(475, 52)
+        Me.txtDetail.Name = "txtDetail"
+        Me.txtDetail.Size = New System.Drawing.Size(74, 14)
+        Me.txtDetail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.txtDetail.TabIndex = 10
+        Me.txtDetail.TabStop = False
+        Me.txtDetail.Visible = False
+        '
         'txtDiskUsage
         '
         Me.txtDiskUsage.BackColor = System.Drawing.Color.Transparent
@@ -127,17 +139,6 @@ Partial Class FroggPerformance
         Me.ListType.Name = "ListType"
         Me.ListType.Size = New System.Drawing.Size(210, 21)
         Me.ListType.TabIndex = 11
-        '
-        'txtDetail
-        '
-        Me.txtDetail.Image = Global.FroggMonitor.My.Resources.Resources.txtDetail
-        Me.txtDetail.Location = New System.Drawing.Point(475, 52)
-        Me.txtDetail.Name = "txtDetail"
-        Me.txtDetail.Size = New System.Drawing.Size(74, 14)
-        Me.txtDetail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.txtDetail.TabIndex = 10
-        Me.txtDetail.TabStop = False
-        Me.txtDetail.Visible = False
         '
         'txtClose
         '
@@ -176,6 +177,7 @@ Partial Class FroggPerformance
         '
         'ProgressMEM
         '
+        Me.ProgressMEM.BackColor = System.Drawing.Color.Black
         Me.ProgressMEM.ForeColor = System.Drawing.Color.Green
         Me.ProgressMEM.Location = New System.Drawing.Point(60, 63)
         Me.ProgressMEM.Name = "ProgressMEM"
@@ -195,6 +197,7 @@ Partial Class FroggPerformance
         '
         'ProgressCPU
         '
+        Me.ProgressCPU.BackColor = System.Drawing.Color.Black
         Me.ProgressCPU.ForeColor = System.Drawing.Color.Green
         Me.ProgressCPU.Location = New System.Drawing.Point(60, 37)
         Me.ProgressCPU.Name = "ProgressCPU"
@@ -214,6 +217,7 @@ Partial Class FroggPerformance
         '
         'ProgressDISK
         '
+        Me.ProgressDISK.BackColor = System.Drawing.Color.Black
         Me.ProgressDISK.ForeColor = System.Drawing.Color.Green
         Me.ProgressDISK.Location = New System.Drawing.Point(60, 90)
         Me.ProgressDISK.Name = "ProgressDISK"
@@ -235,14 +239,14 @@ Partial Class FroggPerformance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.SystemColors.Desktop
         Me.ClientSize = New System.Drawing.Size(555, 121)
         Me.Controls.Add(Me.PanelPerf)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FroggPerformance"
         Me.Text = "Frogg Performance"
-        Me.TransparencyKey = System.Drawing.SystemColors.ActiveCaption
+        Me.TransparencyKey = System.Drawing.SystemColors.Desktop
         CType(Me.CPU, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEM, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DISK, System.ComponentModel.ISupportInitialize).EndInit()

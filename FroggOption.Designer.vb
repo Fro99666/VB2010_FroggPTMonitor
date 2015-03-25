@@ -333,14 +333,14 @@ Partial Class FroggMonitorOption
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.SystemColors.Desktop
         Me.ClientSize = New System.Drawing.Size(553, 121)
         Me.Controls.Add(Me.PanelOptBg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FroggMonitorOption"
         Me.Text = "Frogg Monitor Option"
-        Me.TransparencyKey = System.Drawing.SystemColors.ActiveCaption
+        Me.TransparencyKey = System.Drawing.SystemColors.Desktop
         Me.PanelOptBg.ResumeLayout(False)
         Me.PanelOptBg.PerformLayout()
         CType(Me.txtClose, System.ComponentModel.ISupportInitialize).EndInit()
