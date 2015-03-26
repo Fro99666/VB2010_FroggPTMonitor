@@ -197,6 +197,7 @@
 
 
 #Region "Move Form"
+
     Public MoveForm As Boolean
     Public MoveForm_MousePosition As Point
 
@@ -218,6 +219,7 @@
             Me.Cursor = Cursors.Default
         End If
     End Sub
+
 #End Region
 
 End Class

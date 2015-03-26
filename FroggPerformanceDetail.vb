@@ -121,7 +121,6 @@
         'close perf form
         FroggPerformance.Close()
 
-
         'add timeTickList
         timeTickList.Items.Add("1 sec")
         timeTickList.Items.Add("2 sec")

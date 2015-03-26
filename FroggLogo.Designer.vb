@@ -41,7 +41,7 @@ Partial Class FroggLogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(484, 155)
         Me.Controls.Add(Me.FroggLogoImg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -49,7 +49,7 @@ Partial Class FroggLogo
         Me.Name = "FroggLogo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Frogg Logo"
-        Me.TransparencyKey = System.Drawing.SystemColors.ActiveCaption
+        Me.TransparencyKey = System.Drawing.Color.MidnightBlue
         CType(Me.FroggLogoImg, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

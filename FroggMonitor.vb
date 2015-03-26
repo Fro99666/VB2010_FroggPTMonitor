@@ -31,6 +31,7 @@
 
 
 #Region "Log Func"
+
     Private Function getTime()
         getTime = DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss")
     End Function
@@ -46,6 +47,7 @@
             My.Computer.FileSystem.WriteAllText(logFile, "[" & getTime() & "] " & msg & vbCrLf, True)
         End If
     End Sub
+
 #End Region
 
 
@@ -414,6 +416,7 @@
 
 
 #Region "Functions"
+
     'Create a file
     Public Sub writeFile(ByVal fileName As String, ByVal lines As ArrayList)
         'create stream file
@@ -455,6 +458,7 @@
                 displayMsg = "NOT DEFINED"
         End Select
     End Function
+
 #End Region
 
 

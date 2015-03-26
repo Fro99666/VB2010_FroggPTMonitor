@@ -239,14 +239,14 @@ Partial Class FroggPerformance
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Desktop
+        Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(555, 121)
         Me.Controls.Add(Me.PanelPerf)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FroggPerformance"
         Me.Text = "Frogg Performance"
-        Me.TransparencyKey = System.Drawing.SystemColors.Desktop
+        Me.TransparencyKey = System.Drawing.Color.MidnightBlue
         CType(Me.CPU, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MEM, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DISK, System.ComponentModel.ISupportInitialize).EndInit()
