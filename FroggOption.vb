@@ -22,7 +22,7 @@
         If FroggMonitor.isRunning > 0 Then inptProc.Enabled = False
         'add each process to list
         For Each p As String In FroggMonitor.processList
-            If Not p = "" Then DataGridOptProcess.Rows.Add(p)
+            If Not p = "" Then DataGridOptProcess.Rows.Add(p & ".exe")
         Next
         'priority list
         inptPriority.SelectedIndex = FroggMonitor.exePrio
@@ -37,7 +37,7 @@
         FroggMonitor.processList = {}
         For Each r As DataGridViewRow In DataGridOptProcess.Rows
             Array.Resize(FroggMonitor.processList, FroggMonitor.processList.Length + 1)
-            FroggMonitor.processList(FroggMonitor.processList.Length - 1) = r.Cells(0).Value
+            FroggMonitor.processList(FroggMonitor.processList.Length - 1) = Replace(r.Cells(0).Value, ".exe", "")
         Next
     End Sub
 

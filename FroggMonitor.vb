@@ -246,6 +246,21 @@
 
     '==>TEST
     Private Sub doTest()
+
+        'Check special procest list
+        If processList.Length > 0 Then
+            For Each cProcess As Process In Process.GetProcesses()
+                'if special process found then kill it !
+                For Each specProcess As String In processList
+                    If cProcess.ProcessName = specProcess Then
+                        cProcess.Kill()
+                        addTolog("Killing " & specProcess)
+                    End If
+                Next
+            Next
+        End If
+
+        'do action depending of test
         If procRunning Is Nothing Then
             startProcess()
             addTolog("Process " & nameRunning & " starting")

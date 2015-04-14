@@ -24,6 +24,7 @@ Partial Class FroggLogo
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FroggLogo))
         Me.FroggLogoImg = New System.Windows.Forms.PictureBox()
+        Me.versionName = New System.Windows.Forms.Label()
         CType(Me.FroggLogoImg, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,12 +38,23 @@ Partial Class FroggLogo
         Me.FroggLogoImg.TabIndex = 0
         Me.FroggLogoImg.TabStop = False
         '
+        'versionName
+        '
+        Me.versionName.AutoSize = True
+        Me.versionName.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.versionName.Location = New System.Drawing.Point(434, 126)
+        Me.versionName.Name = "versionName"
+        Me.versionName.Size = New System.Drawing.Size(39, 15)
+        Me.versionName.TabIndex = 1
+        Me.versionName.Text = "V 1.001"
+        '
         'FroggLogo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(484, 155)
+        Me.Controls.Add(Me.versionName)
         Me.Controls.Add(Me.FroggLogoImg)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -56,4 +68,5 @@ Partial Class FroggLogo
 
     End Sub
     Friend WithEvents FroggLogoImg As System.Windows.Forms.PictureBox
+    Friend WithEvents versionName As System.Windows.Forms.Label
 End Class
